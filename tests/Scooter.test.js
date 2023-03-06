@@ -2,9 +2,9 @@ const Scooter = require('../src/Scooter')
 const User = require('../src/User')
 
 //Method tests
-describe('scooter methods', () => {
+describe('scooter test', () => {
   // tests here!
-  test('something', () => {
+  test('scooter methods', () => {
     scooter= new Scooter('station1')
     expect(scooter.station).toBe('station1')
     expect(scooter.user).toBe(null)

@@ -3,8 +3,8 @@ const User = require('../src/User')
 const ScooterApp = require('../src/ScooterApp')
 
 // ScooterApp tests here
-describe('something', () => {
-    test('does something', () => {
+describe('scooter app tests', () => {
+    test('scooter app method tests', () => {
         scooterApp1=new ScooterApp()
       expect(Object.keys(scooterApp1.stations).length).toBe(3);
       expect(Object.keys(scooterApp1.registeredUsers).length).toBe(0);

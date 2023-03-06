@@ -3,8 +3,8 @@ const User = require('../src/User')
 // User tests here
 
 // test username
-describe("something", () =>{
-    test('somethin', () =>{
+describe("user test", () =>{
+    test('user method tests', () =>{
         user1=new User('bob123','pass',5)
         expect(user1.username).toBe('bob123')
         expect(user1.password).toBe('pass')
