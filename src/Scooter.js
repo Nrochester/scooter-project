@@ -3,15 +3,18 @@ class Scooter{
   constructor(station){
     this.station = station
     this.user = null
+    //I see how this works, but is there a better way to do it?
     this.serial = -1
     this.nextSerial = 1
     this.charge = 100
     this.isBroken = false
   }
-  rent(user){
+  rent(user) {
+    //When possible, try to use the triple equals instead of double equals
     if(this.charge>20 && this.isBroken == false ) {
       this.station=null;
-      this.user=user
+      this.user = user
+      //What if the scooter is broken?
     } else {throw new Error('scooter needs to charge')}
   }
   dock(station){
